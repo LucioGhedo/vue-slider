@@ -14,7 +14,7 @@
 .item {
     float: left;
     width: 700px;
-    height: 300px;
+    height: 360px;
     position: relative;
 }
 
@@ -34,7 +34,7 @@
 
 .thumbs {
     float: left;
-    height: 300px;
+    height: 360px;
     background: #000;
     position: relative;
 }

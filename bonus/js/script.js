@@ -27,12 +27,17 @@ var app = new Vue({
                 title: 'Paradise',
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
             },
+            {
+                image: 'img/06.jpg',
+                title: "Cortina d'Ampezzo",
+                text: 'Ma avevi mai visto un mare così? Pazzesco davvero wow io no'
+            }
         ],
         slide: 0,
     },
     methods: {
         nextSlide() {
-            if(this.slide < 4) {
+            if(this.slide < 5) {
                 this.slide += 1
             } else {
                 this.slide = 0
@@ -42,7 +47,7 @@ var app = new Vue({
             if(this.slide > 0) {
                 this.slide -= 1
             } else if (this.slide === 0){
-                this.slide = 4
+                this.slide = 5
             }
         },
         thisSlide(elementIndex) {
