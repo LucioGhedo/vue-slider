@@ -50,6 +50,6 @@ var app = new Vue({
         },
     },
     mounted () {
-        setInterval(this.nextSlide, 4000)
+        setInterval(this.nextSlide, 3000)
     }
   })
