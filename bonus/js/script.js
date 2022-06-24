@@ -30,7 +30,7 @@ var app = new Vue({
             {
                 image: 'img/06.jpg',
                 title: "Cortina d'Ampezzo",
-                text: 'Ma avevi mai visto un mare così? Pazzesco davvero wow io no'
+                text: 'Ma avevi mai visto un mare così? Pazzesco davvero wow io no. VOTO 10. Et temporibus voluptatum suscipit tempore aliquid'
             }
         ],
         slide: 0,
