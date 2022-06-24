@@ -44,6 +44,12 @@ var app = new Vue({
             } else if (this.slide === 0){
                 this.slide = 4
             }
-        }
+        },
+        thisSlide(elementIndex) {
+            this.slide = elementIndex
+        },
+    },
+    mounted () {
+        setInterval(this.nextSlide, 4000)
     }
   })

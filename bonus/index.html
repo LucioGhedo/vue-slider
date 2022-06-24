@@ -45,7 +45,7 @@
                         <img src="img/05.jpg" alt="Paradise" />
                     </div> -->
                     <div class="thumb" :class="{ 'active': index === slide }" v-for="(image, index) in slides">
-                        <img :src=" image.image" :alt=" image.title ">
+                        <img @click="thisSlide(index)" :src=" image.image" :alt=" image.title ">
                     </div>
                 </div>
 
