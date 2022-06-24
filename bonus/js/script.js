@@ -48,8 +48,17 @@ var app = new Vue({
         thisSlide(elementIndex) {
             this.slide = elementIndex
         },
+        stopFunction(){
+            if (event.type == 'mouseover') {
+                clearInterval(mouseOverStop)
+            }
+            if ( event.type == 'mouseout') {
+                mouseOverStop = setInterval(this.nextSlide, 3000)
+            }
+            
+        },
     },
     mounted () {
-        setInterval(this.nextSlide, 3000)
+        mouseOverStop = setInterval(this.nextSlide, 3000)
     }
   })
