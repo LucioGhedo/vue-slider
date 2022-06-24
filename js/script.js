@@ -28,23 +28,22 @@ var app = new Vue({
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
             }
         ],
-        slide: 1,
+        slide: 0,
     },
     methods: {
         nextSlide() {
-            if(this.slide < this.slides.length) {
+            if(this.slide < 4) {
                 this.slide += 1
             } else {
-                this.slide = 1
+                this.slide = 0
             }
         },
         prevSlide() {
-            if(this.slide > 1) {
+            if(this.slide > 0) {
                 this.slide -= 1
-            } else if (this.slide === 1) {
-                this.slide = 5
+            } else if (this.slide === 0){
+                this.slide = 4
             }
-            console.log(this.slide)
         }
     }
   })
